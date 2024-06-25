@@ -154,7 +154,7 @@ class Explosion:
     """
     def __init__(self, bomb:"Bomb", life):
         # 画像を格納するリストの設定
-        self.explosion_img1 = pg.image.load(f"fig/explosion.gif")
+        self.explosion_img1 = pg.image.load(f"fig/explosion.gif") # figにgifが入っていなかった
         self.explosion_img2 = pg.transform.flip(self.explosion_img1, True, True)
         self.effect_list = [self.explosion_img1, self.explosion_img2]
         self.rct: pg.Rect = self.explosion_img1.get_rect()
